@@ -50,3 +50,24 @@ def total():
     total_cost=cost1+cost2+cost3+cost4+cost5+cost6+cost7
     string_bill=str(total_cost)+' PLN'
     total_bill.set(string_bill)
+
+root=Tk()
+root.geometry('1000x500+300+300')
+root.title('Bill Management System')
+root.resizable(False, False)
+
+# Top part
+Label(text='BILL MANAGEMENT SYSTEM', bg='black', fg='white', font=('Arial', 30, 'bold'), width=45, height=2).pack() # pack() places the label in a centre
+
+# Menu
+frame1=Frame(root, bg='lightgreen', highlightbackground='black', highlightthickness=1, width=300, height=370) # highlight works like border but thinner
+frame1.place(x=10, y=118)
+
+Label(frame1, text='MENU', font=('Gabriola', 40, 'bold'), bg='lightgreen', fg='black').place(x=80, y=0)
+Label(frame1, text='Gentleman Jack.........20 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=80)
+Label(frame1, text='Glenfiddich 12yo........40 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=110)
+Label(frame1, text='Macallan 12yo...........85 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=140)
+Label(frame1, text='Black Label................25 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=170)
+Label(frame1, text='Talisker 30yo............110 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=200)
+Label(frame1, text='Wild Turkey..............25 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=230)
+Label(frame1, text='Glenmorangie 12yo....30 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=260)
