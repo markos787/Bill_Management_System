@@ -1,2 +1,1 @@
-# Bill_Management_System
-A simple system to manage bills in restaurant
+# This is a simple bill management system desktop app, which calculates the overal price of an order depending on number of ordered positions from menu. It is very simple to implement as it uses only basic elements of tkinter library from Python.
