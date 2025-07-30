@@ -52,7 +52,7 @@ def total():
     total_bill.set(string_bill)
 
 root=Tk()
-root.geometry('1000x500+300+300')
+root.geometry('1000x500+300+200')
 root.title('Bill Management System')
 root.resizable(False, False)
 
