@@ -71,3 +71,55 @@ Label(frame1, text='Black Label................25 PLN', font=('Lucida Calligraph
 Label(frame1, text='Talisker 30yo............110 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=200)
 Label(frame1, text='Wild Turkey..............25 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=230)
 Label(frame1, text='Glenmorangie 12yo....30 PLN', font=('Lucida Calligraphy', 12, 'bold'), bg='lightgreen', fg='black').place(x=10, y=260)
+
+# Entry work
+frame2=Frame(root, bd=5, width=300, height=370, relief=RAISED) # bd - borderwidth, relief - border style
+frame2.place(x=330, y=125)
+
+gentleman=StringVar()
+glenfiddich=StringVar()
+macallan=StringVar()
+black=StringVar()
+talisker=StringVar()
+wild=StringVar()
+glenmorangie=StringVar()
+
+# Label of entry
+gentleman_lbl=Label(frame2, text='Gentleman Jack', font=('Aria', 18, 'bold'), fg='blue4', width=12)
+glenfiddich_lbl=Label(frame2, text='Glenfiddich', font=('Aria', 18, 'bold'), fg='blue4', width=12)
+macallan_lbl=Label(frame2, text='Macallan', font=('Aria', 18, 'bold'), fg='blue4', width=12)
+black_lbl=Label(frame2, text='Black Label', font=('Aria', 18, 'bold'), fg='blue4', width=12)
+talisker_lbl=Label(frame2, text='Talisker', font=('Aria', 18, 'bold'), fg='blue4', width=12)
+wild_lbl=Label(frame2, text='Wild Turkey', font=('Aria', 18, 'bold'), fg='blue4', width=12)
+glenmorangie_lbl=Label(frame2, text='Glenmorangie', font=('Aria', 18, 'bold'), fg='blue4', width=12)
+
+gentleman_lbl.grid(row=1, column=0)
+glenfiddich_lbl.grid(row=2, column=0)
+macallan_lbl.grid(row=3, column=0)
+black_lbl.grid(row=4, column=0)
+talisker_lbl.grid(row=5, column=0)
+wild_lbl.grid(row=6, column=0)
+glenmorangie_lbl.grid(row=7, column=0)
+
+# Entry
+gentleman_ent=Entry(frame2, textvariable=gentleman, font=('Aria', 18, 'bold'), bg='lightpink', bd=6, width=8, justify='center')
+glenfiddich_ent=Entry(frame2, textvariable=glenfiddich, font=('Aria', 18, 'bold'), bg='lightpink', bd=6, width=8, justify='center')
+macallan_ent=Entry(frame2, textvariable=macallan, font=('Aria', 18, 'bold'), bg='lightpink', bd=6, width=8, justify='center')
+black_ent=Entry(frame2, textvariable=black, font=('Aria', 18, 'bold'), bg='lightpink', bd=6, width=8, justify='center')
+talisker_ent=Entry(frame2, textvariable=talisker, font=('Aria', 18, 'bold'), bg='lightpink', bd=6, width=8, justify='center')
+wild_ent=Entry(frame2, textvariable=wild, font=('Aria', 18, 'bold'), bg='lightpink', bd=6, width=8, justify='center')
+glenmorangie_ent=Entry(frame2, textvariable=glenmorangie, font=('Aria', 18, 'bold'), bg='lightpink', bd=6, width=8, justify='center')
+
+gentleman_ent.grid(row=1, column=1)
+glenfiddich_ent.grid(row=2, column=1)
+macallan_ent.grid(row=3, column=1)
+black_ent.grid(row=4, column=1)
+talisker_ent.grid(row=5, column=1)
+wild_ent.grid(row=6, column=1)
+glenmorangie_ent.grid(row=7, column=1)
+
+reset_btn=Button(frame2, text='Reset', font=('ariel', 16, 'bold'), bg='lightblue', fg='black', bd=5, width=10, command=reset)
+total_btn=Button(frame2, text='Total', font=('ariel', 16, 'bold'), bg='lightblue', fg='black', bd=5, width=10, command=total)
+
+reset_btn.grid(row=8, column=0)
+total_btn.grid(row=8, column=1)
