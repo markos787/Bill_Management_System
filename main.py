@@ -123,3 +123,14 @@ total_btn=Button(frame2, text='Total', font=('ariel', 16, 'bold'), bg='lightblue
 
 reset_btn.grid(row=8, column=0)
 total_btn.grid(row=8, column=1)
+
+# Bill
+frame3=Frame(root, bg='lightyellow', highlightbackground='black', highlightthickness=1, width=300, height=370)
+frame3.place(x=690, y=118)
+
+bill=Label(frame3, text='Bill', font=('Calibri', 20, 'bold'), bg='lightyellow')
+bill.place(x=133, y=10)
+
+total_bill=StringVar()
+
+root.mainloop()
